@@ -1,4 +1,4 @@
-import { use, useEffect, useState} from "react";
+import { useEffect, useState} from "react";
 function useCurrencyInfo(currency) {
     const [data, setData] = useState({})
     useEffect(() => {
@@ -9,4 +9,6 @@ function useCurrencyInfo(currency) {
     return data
 }
 export default useCurrencyInfo
-//https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/currrencies/${currency}.json
+//https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currrencies/${currency}.json
+//For example if currency is usd then the url will be
+//https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json
