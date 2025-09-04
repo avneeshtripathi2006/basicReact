@@ -48,7 +48,7 @@ function App() {
 
 
   return (
-    <div className="min-h-[50vmin] min-w-[75vmin] bg-slate-300 border-[5px] border-slate-500 rounded-[20px] glass flex flex-col justify-center items-center gap-[2vmin] shadow-[20px_20px_40px_#bebebe,-20px_-20px_40px_#ffffff]">
+    <div className="relative min-h-[50vmin] min-w-[75vmin] bg-slate-300 border-[5px] border-slate-500 rounded-[20px] glass flex flex-col justify-center items-center gap-[2vmin] shadow-[20px_20px_40px_#bebebe,-20px_-20px_40px_#ffffff]">
       <div className="relative flex flex-col justify-center items-center gap-[2vmin]">
         <Box label="From" amount={amount} currencyoptions={options} onCurrencyChange={(currency) => setFrom(currency)} onAmountChange={(amount) => setAmount(amount)} selectCurrency={from} />
         <Box label="To" amount={result} currencyoptions={options} onCurrencyChange={(currency) => setTo(currency)} selectCurrency={to} amountDisabled />
