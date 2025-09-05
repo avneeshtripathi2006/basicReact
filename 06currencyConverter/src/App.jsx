@@ -52,10 +52,10 @@ function App() {
       <div className="relative flex flex-col justify-center items-center gap-[2vmin]">
         <Box label="From" amount={amount} currencyoptions={options} onCurrencyChange={(currency) => setFrom(currency)} onAmountChange={(amount) => setAmount(amount)} selectCurrency={from} />
         <Box label="To" amount={result} currencyoptions={options} onCurrencyChange={(currency) => setTo(currency)} selectCurrency={to} amountDisabled />
-        <button onClick={swap} className="min-w-[5vmin] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-2 bg-blue-700 text-white rounded">Swap</button>
+        <button onClick={swap} className="min-w-[10vmin] min-h-[5vmin] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-2 bg-blue-700 text-white rounded">Swap</button>
       </div>
       <button onClick={convert} disabled={autoConvert} className="min-w-[65vmin] min-h-[7vmin] bg-blue-700 text-white font-bold">Convert {from.toUpperCase()} to {to.toUpperCase()}</button>
-      <div className="absolute top-2 right-2 flex items-center gap-2">
+      <div className="absolute top-[1vmin] right-[1vmin] flex items-center gap-2">
         <label htmlFor="autoConvert" className="font-semibold">Auto Convert</label>
         <input id="autoConvert" type="checkbox" checked={autoConvert} onChange={() => setAutoConvert(prev => !prev)} className="w-6 h-3 accent-blue-700 cursor-pointer"/>
       </div>
